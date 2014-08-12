@@ -30,7 +30,7 @@
     //1
     self.tableView.dataSource =self;
     self.tableView.delegate = self;
-    //2
+    //2 init audio player and retrieve songs from device
     self.audioPlayer = [[AVPlayer alloc] init];
     MPMediaQuery *everything = [[MPMediaQuery alloc] init];
     NSArray *itemsFromGenericQuery = [everything items];
